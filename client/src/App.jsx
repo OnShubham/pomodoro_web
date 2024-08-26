@@ -14,8 +14,8 @@ function App() {
       <Router>
         <Navigation />
         <Routes>
-          <Route path="/" element={<Home />}  />
-          <Route path="/pomodoro" element={<Pomodoro />} />
+          <Route path="/home" element={<Home />}  />
+          <Route path="/" element={<Pomodoro />} />
           <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
