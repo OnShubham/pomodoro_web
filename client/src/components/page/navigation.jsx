@@ -1,23 +1,23 @@
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import DarkMode from "../button/dark";
 
+import icon from "../../assets/icon.png";
+
 function Navigation() {
   return (
     <div className="flex items-center justify-center p-6">
-      <NavigationMenu className="bg-neutral-900 shadow-md rounded-lg p-4">
-        <NavigationMenuList className="flex space-x-6">
+      <NavigationMenu className="bg-background  p-4">
+        <NavigationMenuList className="flex space-x-2 sm:space-x-64">
           {/* icon */}
-          <NavigationMenuItem></NavigationMenuItem>
+          <NavigationMenuItem>
+            <img src={icon} className="max-w-16" alt="Logo" />
+          </NavigationMenuItem>
 
           {/* item */}
           <NavigationMenuItem>
