@@ -10,7 +10,7 @@ import Signup from "./pages/signup";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Router>
         <Navigation />
         <Routes>
@@ -20,7 +20,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </BrowserRouter>
+    </>
   );
 }
 
