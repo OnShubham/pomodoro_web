@@ -9,12 +9,17 @@ import {
   NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import DarkMode from "../button/dark";
 
 function Navigation() {
   return (
     <div className="flex items-center justify-center p-6">
-      <NavigationMenu className="bg-neutral-800 shadow-md rounded-lg p-4">
+      <NavigationMenu className="bg-neutral-900 shadow-md rounded-lg p-4">
         <NavigationMenuList className="flex space-x-6">
+          {/* icon */}
+          <NavigationMenuItem></NavigationMenuItem>
+
+          {/* item */}
           <NavigationMenuItem>
             <NavigationMenuLink
               href="/"
@@ -22,27 +27,20 @@ function Navigation() {
             >
               Home
             </NavigationMenuLink>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
             <NavigationMenuLink
               href="/pomodoro"
               className={navigationMenuTriggerStyle()}
             >
               Pomodoro
             </NavigationMenuLink>
-          </NavigationMenuItem>
 
-          <NavigationMenuItem>
             <NavigationMenuLink
               href="/login"
               className={navigationMenuTriggerStyle()}
             >
               Login
             </NavigationMenuLink>
-          </NavigationMenuItem>
 
-          <NavigationMenuItem>
             <NavigationMenuLink
               href="/signup"
               className={navigationMenuTriggerStyle()}
@@ -50,6 +48,9 @@ function Navigation() {
               Signup
             </NavigationMenuLink>
           </NavigationMenuItem>
+
+          {/* toggle dark and light */}
+          <NavigationMenuItem></NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </div>
